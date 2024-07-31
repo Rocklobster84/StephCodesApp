@@ -1,4 +1,4 @@
-//const Home = require('../models/home');
+//const Home = require('../db/photography');
 
 module.exports = {
   photography: async (req, res) => {

@@ -1,4 +1,4 @@
-//const Home = require('../models/home');
+//const Home = require('../db/index');
 
 module.exports = {
   homeIndex: async (req, res) => {
