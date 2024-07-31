@@ -9,6 +9,8 @@ const cors = require('cors');
 const favicon = require('serve-favicon');
 
 const indexRouter = require('./routes/index');
+const photographyRouter = require('./routes/photography');
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -26,6 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname + '/public/images/favicon.ico')));
 
 app.use('/', indexRouter);
+app.use('/photography', photographyRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
